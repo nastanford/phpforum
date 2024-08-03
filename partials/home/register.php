@@ -1,7 +1,6 @@
-<cfsetting showdebugoutput=false>
   <div id="loginScreen">
-    <div class="container col-12 mb-2">
-      <form hx-get="/partials/home/login_check.php" hx-target="#loginScreen" hx-swap="innerHTML">
+    <div class="container col-12 mb-3">
+      <form hx-get="/partials/home/submit_user.php" hx-target="#loginScreen" hx-swap="innerHTML">
 
         <div class="mb-3">
           <label for="username" class="form-label">Username:</label>
@@ -16,7 +15,7 @@
           <input type="password" class="form-control" id="mypassword" name="mypassword">
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-secondary">Register</button>
+          <button type="submit" class="btn btn-primary">Register</button>
           <button type="button" class="btn btn-secondary" hx-get="/partials/home/login.php" hx-target="#loginScreen" hx-swap="innerHTML">Cancel</button>
         </div>
       </form>

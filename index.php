@@ -2,12 +2,26 @@
 session_start();
 
 // Set the session variable
-$_SESSION['username'] = 'NightCoder';
+// $_SESSION['username'] = 'NightCoder';
+$_SESSION['username'] = '';
 
+include './queries/qry_users.php';
+
+
+// Display or process the users
+foreach ($users as $user) {
+  echo "User ID: " . $user['user_id'] . "<br>";
+  echo "Username: " . $user['username'] . "<br>";
+  echo "Email: " . $user['email'] . "<br>";
+  echo "Join Date: " . $user['join_date'] . "<br>";
+  echo "Post Count: " . $user['post_count'] . "<br>";
+  echo "Reply Count: " . $user['reply_count'] . "<br>";
+  echo "<hr>";
+}
 include 'includes/header.php';
 include 'includes/navbar.php';
 
-
+//var_dump($users);
 ?>
 
 
@@ -25,9 +39,9 @@ include 'includes/navbar.php';
     <div class="col-md-4">
       <?php
       // Right Side 
-      // echo $_SESSION['username'];
       if ($_SESSION['username'] != "") {
-        include 'partials/home/login_check.php';
+        // include 'partials/home/login_check.php';
+        include 'partials/home/register.php';
       } else {
         include 'partials/home/login.php';
       }
