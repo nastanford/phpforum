@@ -25,7 +25,12 @@ include 'includes/navbar.php';
     <div class="col-md-4">
       <?php
       // Right Side 
-      echo $_SESSION['username'];
+      // echo $_SESSION['username'];
+      if ($_SESSION['username'] != "") {
+        include 'partials/home/login_check.php';
+      } else {
+        include 'partials/home/login.php';
+      }
       include 'partials/home/card3.php';
       include 'partials/home/card4.php';
       include 'partials/home/card5.php';
