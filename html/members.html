@@ -1,0 +1,246 @@
+<html><head><base href="https://html.gen.ai/members">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - Nightowl Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .navbar {
+            background-color: #1e1e1e !important;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+        }
+        .btn-primary {
+            background-color: #7952b3;
+            border-color: #7952b3;
+        }
+        .btn-primary:hover {
+            background-color: #6a46a3;
+            border-color: #6a46a3;
+        }
+        .list-group-item {
+            background-color: #1e1e1e;
+            border-color: #333;
+        }
+        .text-muted {
+            color: #888 !important;
+        }
+        .member-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        .member-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Nightowl Forum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/members">Members</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search members" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Forum Members</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Featured Members</h5>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card member-card">
+                                    <div class="card-body text-center">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="NightCoder avatar" class="member-avatar mb-2">
+                                        <h6 class="card-title"><a href="/user/nightcoder" class="text-light">NightCoder</a></h6>
+                                        <p class="card-text"><small class="text-muted">Java Expert</small></p>
+                                        <span class="badge bg-primary">Top Contributor</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card member-card">
+                                    <div class="card-body text-center">
+                                        <img src="https://i.pravatar.cc/150?img=2" alt="JavaEnthusiast avatar" class="member-avatar mb-2">
+                                        <h6 class="card-title"><a href="/user/javaenthusiast" class="text-light">JavaEnthusiast</a></h6>
+                                        <p class="card-text"><small class="text-muted">Spring Guru</small></p>
+                                        <span class="badge bg-success">Moderator</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card member-card">
+                                    <div class="card-body text-center">
+                                        <img src="https://i.pravatar.cc/150?img=3" alt="CodeCrafter avatar" class="member-avatar mb-2">
+                                        <h6 class="card-title"><a href="/user/codecrafter" class="text-light">CodeCrafter</a></h6>
+                                        <p class="card-text"><small class="text-muted">JVM Tuner</small></p>
+                                        <span class="badge bg-info">Rising Star</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">All Members</h5>
+                        <div class="table-responsive">
+                            <table class="table table-dark table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Joined</th>
+                                        <th>Posts</th>
+                                        <th>Reputation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="/user/nightcoder" class="text-light">NightCoder</a></td>
+                                        <td>Jan 15, 2022</td>
+                                        <td>1,234</td>
+                                        <td>4,567</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/user/javaenthusiast" class="text-light">JavaEnthusiast</a></td>
+                                        <td>Mar 3, 2022</td>
+                                        <td>987</td>
+                                        <td>3,210</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/user/codecrafter" class="text-light">CodeCrafter</a></td>
+                                        <td>May 20, 2022</td>
+                                        <td>765</td>
+                                        <td>2,345</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/user/pythonista" class="text-light">Pythonista</a></td>
+                                        <td>Jul 7, 2022</td>
+                                        <td>543</td>
+                                        <td>1,678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/user/webwizard" class="text-light">WebWizard</a></td>
+                                        <td>Sep 12, 2022</td>
+                                        <td>432</td>
+                                        <td>1,234</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Member navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Member Statistics</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Total Members
+                                <span class="badge bg-primary rounded-pill">12,345</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                New Members Today
+                                <span class="badge bg-success rounded-pill">23</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Online Members
+                                <span class="badge bg-info rounded-pill">178</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Member Leaderboard</h5>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold"><a href="/user/nightcoder" class="text-light">NightCoder</a></div>
+                                    Java Expert
+                                </div>
+                                <span class="badge bg-primary rounded-pill">4,567</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold"><a href="/user/javaenthusiast" class="text-light">JavaEnthusiast</a></div>
+                                    Spring Guru
+                                </div>
+                                <span class="badge bg-primary rounded-pill">3,210</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold"><a href="/user/codecrafter" class="text-light">CodeCrafter</a></div>
+                                    JVM Tuner
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2,345</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Member Actions</h5>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button">Invite a Friend</button>
+                            <button class="btn btn-outline-light" type="button">View Member Guidelines</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-4">
+        <p>&copy; 2023 Nightowl Forum. All rights reserved.</p>
+    </footer>
+</body></html>

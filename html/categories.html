@@ -1,0 +1,193 @@
+<html><head><base href="https://html.gen.ai/categories">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Nightowl Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .navbar {
+            background-color: #1e1e1e !important;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+        }
+        .btn-primary {
+            background-color: #7952b3;
+            border-color: #7952b3;
+        }
+        .btn-primary:hover {
+            background-color: #6a46a3;
+            border-color: #6a46a3;
+        }
+        .list-group-item {
+            background-color: #1e1e1e;
+            border-color: #333;
+        }
+        .text-muted {
+            color: #888 !important;
+        }
+        .category-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Nightowl Forum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/members">Members</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Forum Categories</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Programming Languages</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fab fa-java category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/java" class="text-light">Java</a></h6>
+                                    <small class="text-muted">Discuss Java programming, frameworks, and best practices</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fab fa-python category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/python" class="text-light">Python</a></h6>
+                                    <small class="text-muted">Python programming, libraries, and applications</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fab fa-js category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/javascript" class="text-light">JavaScript</a></h6>
+                                    <small class="text-muted">JavaScript, frameworks, and web development</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-code category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/frontend" class="text-light">Frontend Development</a></h6>
+                                    <small class="text-muted">HTML, CSS, JavaScript, and frontend frameworks</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-server category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/backend" class="text-light">Backend Development</a></h6>
+                                    <small class="text-muted">Server-side programming, APIs, and databases</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-mobile-alt category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/mobile" class="text-light">Mobile Development</a></h6>
+                                    <small class="text-muted">iOS, Android, and cross-platform mobile development</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science & AI</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-brain category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/machine-learning" class="text-light">Machine Learning</a></h6>
+                                    <small class="text-muted">ML algorithms, techniques, and applications</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-chart-bar category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/data-analysis" class="text-light">Data Analysis</a></h6>
+                                    <small class="text-muted">Data processing, visualization, and statistical analysis</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-robot category-icon"></i>
+                                <div>
+                                    <h6><a href="/category/artificial-intelligence" class="text-light">Artificial Intelligence</a></h6>
+                                    <small class="text-muted">AI research, neural networks, and deep learning</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Statistics</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Total Categories
+                                <span class="badge bg-primary rounded-pill">9</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Most Active Category
+                                <span class="badge bg-primary rounded-pill">JavaScript</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Newest Category
+                                <span class="badge bg-primary rounded-pill">AI</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Actions</h5>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button">Suggest New Category</button>
+                            <button class="btn btn-outline-light" type="button">View All Subcategories</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-4">
+        <p>&copy; 2023 Nightowl Forum. All rights reserved.</p>
+    </footer>
+</body></html>
