@@ -3,7 +3,7 @@
     <div class="row align-items-center">
       <div class="col">
         <div class="h3 mb-2">
-          Nathan Stanford<br>
+          <?= $_SESSION['user']->getUsername() ?><br>
           <span class="h5 text-white-50">ColdFusion Expert</span>
         </div>
       </div>

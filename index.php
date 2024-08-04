@@ -1,30 +1,28 @@
 <?php
 session_start();
+// Include the autoloader
+require_once 'autoloader.php';
 
-// Set the session variable
-// $_SESSION['username'] = 'NightCoder';
-$_SESSION['username'] = '';
+// Include your class definitions or use an autoloader
+// require_once './models/User.php';
 
-include './queries/qry_users.php';
-
-
-// Display or process the users
-foreach ($users as $user) {
-  echo "User ID: " . $user['user_id'] . "<br>";
-  echo "Username: " . $user['username'] . "<br>";
-  echo "Email: " . $user['email'] . "<br>";
-  echo "Join Date: " . $user['join_date'] . "<br>";
-  echo "Post Count: " . $user['post_count'] . "<br>";
-  echo "Reply Count: " . $user['reply_count'] . "<br>";
-  echo "<hr>";
+// Ensure the User object is properly instantiated in the session
+if (!isset($_SESSION['user']) || !($_SESSION['user'] instanceof Models\User)) {
+  $_SESSION['user'] = new Models\User();
 }
+// set username 
+$_SESSION['user']->setUsername('NightCoder');
+
+
+// Now you can safely use the User object
+if ($_SESSION['user']->getUsername() !== null) {
+  echo 'User: ' . $_SESSION['user']->getUsername();
+}
+
 include 'includes/header.php';
 include 'includes/navbar.php';
 
-//var_dump($users);
 ?>
-
-
 
 <div class="container mt-4">
   <div class="row">
@@ -38,13 +36,21 @@ include 'includes/navbar.php';
     </div>
     <div class="col-md-4">
       <?php
-      // Right Side 
-      if ($_SESSION['username'] != "") {
-        // include 'partials/home/login_check.php';
-        include 'partials/home/register.php';
+      if ($_SESSION['user']->getUsername() !== null) {
+        include 'partials/home/login_check.php';
+
+        // echo 'User: ' . $_SESSION['user']->getUsername();
       } else {
         include 'partials/home/login.php';
       }
+
+      // Right Side 
+      // if ($_SESSION['username'] != "") {
+      //   // include 'partials/home/login_check.php';
+      //   include 'partials/home/register.php';
+      // } else {
+      //   include 'partials/home/login.php';
+      // }
       include 'partials/home/card3.php';
       include 'partials/home/card4.php';
       include 'partials/home/card5.php';
